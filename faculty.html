@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Faculty - Omega School Of Business</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/o1.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    .faculty-section{
+    padding:100px 0;
+    background:#f5f8ff;
+}
+
+.faculty-list{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-top:50px;
+}
+
+.faculty-box{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:.4s;
+    border-left:6px solid #071c74;;
+}
+
+.faculty-box:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.faculty-image img{
+    width:220px;
+    height:260px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:15px;
+}
+
+.faculty-info{
+    flex:1;
+}
+
+.faculty-role{
+    display:inline-block;
+    background:#071c74;;
+    color:#fff;
+    padding:6px 15px;
+    border-radius:30px;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.faculty-info h3{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.faculty-details{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.faculty-details div{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:16px;
+    color:#555;
+}
+
+.faculty-details i{
+    width:42px;
+    height:42px;
+    background:#eef5ff;
+    color:#071c74;;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+
+@media(max-width:992px){
+
+.faculty-box{
+    flex-direction:column;
+    text-align:center;
+}
+
+.faculty-image img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+}
+
+.faculty-details{
+    grid-template-columns:1fr;
+}
+
+.faculty-details div{
+    justify-content:center;
+}
+
+.faculty-info h3{
+    font-size:26px;
+}
+
+} 
+  </style>
+</head>
+
+
+<body class="index-page">
+
+   <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo1.png" alt="">
+        <!-- <h1 class="sitename">Estate<span>Agency</span></h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+           <li class="dropdown"><a href="about.html" class="active"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="chairman.html">Chairman & Founder</a></li>
+              <li><a href="vicechairperson.html">Vice Chairperson</a></li>
+              <li><a href="principal.html">Principal</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+
+              
+              <!-- <li class="dropdown"><a href="faculty.html"><span>Faculty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="courses.html">Courses</a></li>
+
+
+         
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <section class="faculty-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Meet Our Experts</span>
+            <h2>Faculty Members</h2>
+            <p>
+                Our experienced faculty members inspire students through
+                quality teaching, research, innovation, and industry-oriented learning.
+            </p>
+        </div>
+
+        <div class="faculty-list">
+
+            
+
+            <div class="faculty-box">
+
+                <div class="faculty-image">
+                    <img src="assets/img/faculty/f3.png" alt="">
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-role">Head of the Department</span>
+
+                   <a href="kusuma.html"> <h3>K. Kusuma Kumari</h3></a>
+
+                    <div class="faculty-details">
+
+                        <div>
+                            <i class="bi bi-building"></i>
+                            <span>Commerce</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <span>M.Com</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-book-half"></i>
+                            <span>Commerce</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-briefcase-fill"></i>
+                            <span>20+ Years Experience</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="faculty-box">
+
+                <div class="faculty-image">
+                    <img src="assets/img/faculty/f2.png" alt="">
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-role">Head of the Department</span>
+
+                    <a href="hemamalini.html"><h3>T. Hemamalini</h3></a>
+
+                    <div class="faculty-details">
+
+                        <div>
+                            <i class="bi bi-building"></i>
+                            <span>Business Management</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <span>MBA</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-book-half"></i>
+                            <span>Finance</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-briefcase-fill"></i>
+                            <span>3+ Years Experience</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="faculty-box">
+
+                <div class="faculty-image">
+                    <img src="assets/img/faculty/f4.png" alt="">
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-role">Assistant Professor</span>
+
+                   <a href="saiamulya.html"> <h3>Sai Amulya P</h3></a>
+
+                    <div class="faculty-details">
+
+                        <div>
+                            <i class="bi bi-building"></i>
+                            <span>Business Management</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <span>MBA, NET & SET Qualified</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-book-half"></i>
+                            <span>Finance & HR</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-briefcase-fill"></i>
+                            <span>2+ Years Experience</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="faculty-box">
+
+    <div class="faculty-image">
+        <img src="assets/img/faculty/f6.png" alt="G Meghana">
+    </div>
+
+    <div class="faculty-info">
+
+        <span class="faculty-role">Assistant Professor</span>
+
+        <a href="meghana.html">
+            <h3>G Meghana</h3>
+        </a>
+
+        <div class="faculty-details">
+
+            <div>
+                <i class="bi bi-building"></i>
+                <span>English</span>
+            </div>
+
+            <div>
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>M.A. in English</span>
+            </div>
+
+            <div>
+                <i class="bi bi-book-half"></i>
+                <span>English</span>
+            </div>
+
+            <div>
+                <i class="bi bi-briefcase-fill"></i>
+                <span>2+ Years Experience</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="faculty-box">
+
+    <div class="faculty-image">
+        <img src="assets/img/faculty/f5.png" alt="T. Hemanth Kumar">
+    </div>
+
+    <div class="faculty-info">
+
+        <span class="faculty-role">Assistant Professor</span>
+
+        <a href="heamanth.html">
+            <h3>T. Hemanth Kumar</h3>
+        </a>
+
+        <div class="faculty-details">
+
+            <div>
+                <i class="bi bi-building"></i>
+                <span>Informatics</span>
+            </div>
+
+            <div>
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>M.C.A.</span>
+            </div>
+
+            <div>
+                <i class="bi bi-book-half"></i>
+                <span>Data Science</span>
+            </div>
+
+            <div>
+                <i class="bi bi-briefcase-fill"></i>
+                <span>2+ Years Experience</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="faculty-box">
+
+    <div class="faculty-image">
+        <img src="assets/img/faculty/f7.png" alt="K. Siva Subbarao">
+    </div>
+
+    <div class="faculty-info">
+
+        <span class="faculty-role">Lecturer</span>
+
+        <a href="shiva.html">
+            <h3>K. Siva Subbarao</h3>
+        </a>
+
+        <div class="faculty-details">
+
+            <div>
+                <i class="bi bi-building"></i>
+                <span>Informatics</span>
+            </div>
+
+            <div>
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>B.Tech</span>
+            </div>
+
+            <div>
+                <i class="bi bi-book-half"></i>
+                <span>Computer Science</span>
+            </div>
+
+            <div>
+                <i class="bi bi-briefcase-fill"></i>
+                <span>2+ Year Experience</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="faculty-box">
+
+    <div class="faculty-image">
+        <img src="assets/img/faculty/f8.png" alt="A. Lavanya">
+    </div>
+
+    <div class="faculty-info">
+
+        <span class="faculty-role">Lecturer</span>
+
+        <a href="lavanya.html">
+            <h3>A. Lavanya</h3>
+        </a>
+
+        <div class="faculty-details">
+
+            <div>
+                <i class="bi bi-building"></i>
+                <span>Department of Informatics</span>
+            </div>
+
+            <div>
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>M.Sc. Computer Science</span>
+            </div>
+
+            <div>
+                <i class="bi bi-book-half"></i>
+                <span>Computer Science</span>
+            </div>
+
+            <div>
+                <i class="bi bi-briefcase-fill"></i>
+                <span>2+ Years Experience</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer id="footer" class="footer light-background">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Address -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div class="address">
+          <h4>Omega School of Business</h4>
+          <p>Habsiguda</p>
+          <p>Hyderabad, Telangana</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>Contact</h4>
+          <p>
+            <strong>Phone:</strong>
+            <span><a href="tel:9912988867">9912988867</a></span><br>
+
+            <strong>Email:</strong>
+            <span>
+              <a href="mailto:obs.principal@omegacolleges.com">
+                obs.principal@omegacolleges.com
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Programs -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-mortarboard icon"></i>
+        <div>
+          <h4>Programs Offered</h4>
+          <a href="bba.html"><p>BBA</p></a>
+          <a href="bca.html"><p>BCA</p></a>
+         <a href="bcom.html"><p>B.Com (Computer Applications)</p></a> 
+          <a href="aiml.html"><p>B.Sc AI & ML</p></a>
+          <p><strong>Affiliated to Osmania University</strong></p>
+        </div>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-lg-3 col-md-6">
+        <h4>Follow Us</h4>
+
+        <p class="mb-3">
+          Admissions Open 2026-27<br>
+          Build your future with quality education.
+        </p>
+
+        <div class="social-links d-flex">
+
+          <a href="https://www.facebook.com/share/1JwzQ4fKQy/" class="facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://www.instagram.com/omegaschoolofbusiness?utm_source=qr&igsh=dW1jaGJzbGxvMjJo" class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://youtube.com/@omegaschoolofbusiness?si=VasuLgBYLKdrgt0E" class="youtube">
+            <i class="bi bi-youtube"></i>
+          </a>
+
+          <a href="#" class="linkedin">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+        </div>
+
+        <a href="tel:9912988867" class="btn btn-primary mt-3 px-4 rounded-pill" style="background-color: #102a72;">
+          Apply Now
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-5">
+    <p>
+      © <strong class="px-1 sitename">Omega School of Business</strong>
+      All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+  <script>
+    const accordions = document.querySelectorAll(".accordion-header");
+
+accordions.forEach((header) => {
+
+    header.addEventListener("click", () => {
+
+        const item = header.parentElement;
+
+        item.classList.toggle("active");
+
+    });
+
+});
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

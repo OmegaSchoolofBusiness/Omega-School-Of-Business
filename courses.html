@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Courses - Omega School of Business</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/o1.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+  <style>
+    .service-item{
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.service-item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.service-item .icon{
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover .icon{
+    transform: scale(1.1);
+}
+
+.service-item h3{
+    transition: color 0.3s ease;
+}
+
+.service-item:hover h3{
+    color: #0d6efd;
+}
+
+    .stats .stats-item .counter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stats .stats-item .counter .purecounter{
+    display: inline !important;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1;
+}
+
+.stats .stats-item .counter .suffix{
+    display: inline !important;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1;
+    margin-left: 2px;
+}
+.about-images img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.about-images img:hover{
+    transform:scale(1.03);
+}
+
+.programs{
+    background:#f7f9fc;
+}
+
+.section-title span{
+
+    color:#1237b7;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:14px;
+    position:relative;
+}
+
+.section-title span::before,
+.section-title span::after{
+
+    content:'';
+    width:70px;
+    height:2px;
+    background:#1237b7;
+    display:inline-block;
+    margin:4px 15px;
+
+}
+
+.section-title h2{
+
+    font-size:46px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+.section-title p{
+
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.program-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:.4s;
+    position:relative;
+    height: 650px;
+}
+
+.program-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.program-image{
+
+    height:270px;
+    overflow:hidden;
+}
+
+.program-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.program-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.program-body{
+
+    padding:35px;
+    position:relative;
+}
+
+.program-icon{
+
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#eef3ff;
+
+    color:#1237b7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    position:absolute;
+
+    top:-35px;
+
+    left:35px;
+
+    border:5px solid #fff;
+}
+
+.program-body h3{
+
+    margin-top:30px;
+    font-size:38px;
+    font-weight:700;
+    color:#102a72;
+}
+
+.program-body p{
+
+    color:#555;
+    font-size:18px;
+    min-height:55px;
+}
+
+.program-body a{
+
+    color:#1237b7;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.program-body a i{
+
+    transition:.3s;
+}
+
+.program-body a:hover i{
+
+    transform:translateX(8px);
+}
+
+
+
+@media(max-width:768px){
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+.program-image{
+
+height:220px;
+
+}
+
+.program-body h3{
+
+font-size:30px;
+
+}
+
+}
+  .course-title{
+    font-size:18px;
+    font-weight:600;
+    color:#0d47a1;
+}
+
+.course-desc{
+    font-size:15px;
+    line-height:1.7;
+    color:#6c757d;
+    margin-top: -20px;
+}
+
+
+  </style>
+</head>
+
+<body class="index-page">
+    
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo1.png" alt="">
+        <!-- <h1 class="sitename">Estate<span>Agency</span></h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+           <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="chairman.html">Chairman & Founder</a></li>
+              <li><a href="vicechairperson.html">Vice Chairperson</a></li>
+              <li><a href="principal.html">Principal</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+
+              
+              <!-- <li class="dropdown"><a href="faculty.html"><span>Faculty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+
+
+         
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <section class="programs py-5">
+
+    <div class="container" style="margin-top: 80px;">
+
+        <div class="section-title text-center mb-5">
+
+            <span>OUR PROGRAMS</span>
+
+            <h2>Our Academic Programs</h2>
+
+            <p>
+                Discover industry-focused undergraduate programs designed to build
+                skills, knowledge, and successful careers.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- BCA -->
+            <div class="col-lg-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="assets/img/bca.png">
+
+                    </div>
+
+                    <div class="program-body">
+
+                        <div class="program-icon">
+
+                            <i class="bi bi-code-slash"></i>
+
+                        </div>
+
+                       <h3>BCA</h3>
+                    <p class="course-title">Bachelor of Computer Applications</p>
+
+                    <p class="course-desc">
+                    Build a strong foundation in programming, software development, and emerging technologies for successful IT careers.
+                    </p>
+
+                        <a href="bca.html">
+                            Explore Program
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BBA -->
+
+            <div class="col-lg-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="assets/img/bba.png">
+
+                    </div>
+
+                    <div class="program-body">
+
+                        <div class="program-icon">
+
+                            <i class="bi bi-briefcase"></i>
+
+                        </div>
+
+                        <h3>BBA</h3>
+                        <p class="course-title">Bachelor of Business Administration</p>
+
+                        <p class="course-desc">
+                        Develop leadership, managerial, and entrepreneurial skills to excel in today's dynamic business environment.
+                        </p>
+
+                        <a href="bba.html">
+
+                            Explore Program
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BCom -->
+
+            <div class="col-lg-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="assets/img/bcom.png">
+
+                    </div>
+
+                    <div class="program-body">
+
+                        <div class="program-icon">
+
+                            <i class="bi bi-graph-up"></i>
+
+                        </div>
+
+                        <h3>B.Com (CA)</h3>
+                        <p class="course-title">Bachelor of Commerce (Computer Applications)</p>
+
+                        <p class="course-desc">
+                        Combine commerce with technology by gaining expertise in accounting, finance, and modern computer applications.
+                        </p>
+
+                        <a href="bcom.html">
+
+                            Explore Program
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- AIML -->
+
+            <div class="col-lg-6">
+
+                <div class="program-card">
+
+                    <div class="program-image">
+
+                        <img src="assets/img/aiml.png">
+
+                    </div>
+
+                    <div class="program-body">
+
+                        <div class="program-icon">
+
+                            <i class="bi bi-cpu"></i>
+
+                        </div>
+
+                        <h3>B.Sc AI & ML</h3>
+                        <p class="course-title">Bachelor of Science in Artificial Intelligence & Machine Learning</p>
+
+                        <p class="course-desc">
+                        Learn AI, Machine Learning, Data Science, and intelligent technologies to build the next generation of smart solutions.
+                        </p>
+
+                        <a href="aiml.html">
+
+                            Explore Program
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="footer" class="footer light-background">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Address -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div class="address">
+          <h4>Omega School of Business</h4>
+          <p>Habsiguda</p>
+          <p>Hyderabad, Telangana</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>Contact</h4>
+          <p>
+            <strong>Phone:</strong>
+            <span><a href="tel:9912988867">9912988867</a></span><br>
+
+            <strong>Email:</strong>
+            <span>
+              <a href="mailto:obs.principal@omegacolleges.com">
+                obs.principal@omegacolleges.com
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Programs -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-mortarboard icon"></i>
+        <div>
+          <h4>Programs Offered</h4>
+          <a href="bba.html"><p>BBA</p></a>
+          <a href="bca.html"><p>BCA</p></a>
+         <a href="bcom.html"><p>B.Com (Computer Applications)</p></a> 
+          <a href="aiml.html"><p>B.Sc AI & ML</p></a>
+          <p><strong>Affiliated to Osmania University</strong></p>
+        </div>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-lg-3 col-md-6">
+        <h4>Follow Us</h4>
+
+        <p class="mb-3">
+          Admissions Open 2026-27<br>
+          Build your future with quality education.
+        </p>
+
+        <div class="social-links d-flex">
+
+          <a href="https://www.facebook.com/share/1JwzQ4fKQy/" class="facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://www.instagram.com/omegaschoolofbusiness?utm_source=qr&igsh=dW1jaGJzbGxvMjJo" class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://youtube.com/@omegaschoolofbusiness?si=VasuLgBYLKdrgt0E" class="youtube">
+            <i class="bi bi-youtube"></i>
+          </a>
+
+          <a href="#" class="linkedin">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+        </div>
+
+        <a href="tel:9912988867" class="btn btn-primary mt-3 px-4 rounded-pill" style="background-color: #102a72;">
+          Apply Now
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-5">
+    <p>
+      © <strong class="px-1 sitename">Omega School of Business</strong>
+      All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> Sai Amulya - Omega School of Business</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/o1.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+ 
+<style>
+    /*=========================================
+        FACULTY PROFILE SECTION
+=========================================*/
+   .faculty-profile-section{
+    padding:100px 0;
+    background:linear-gradient(135deg,#f8fbff,#eef5ff);
+    overflow:hidden;
+}
+
+.faculty-profile-section .container{
+    max-width:1200px;
+}
+
+.faculty-profile-section .row{
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.faculty-profile-section .row::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:8px;
+    height:100%;
+    background-color: #071c74; ;
+}
+
+
+
+.faculty-profile-section img{
+    width:100%;
+    max-width:320px;
+    aspect-ratio:3/4;
+    object-fit:cover;
+    object-position:top;
+    border-radius:20px;
+    border:6px solid #fff;
+    box-shadow:0 15px 40px rgba(13,110,253,.18);
+    transition:.4s;
+}
+
+.faculty-profile-section img:hover{
+    transform:scale(1.03);
+}
+
+
+
+.faculty-profile-section .badge{
+    padding:10px 18px;
+    font-size:14px;
+    font-weight:600;
+    border-radius:50px;
+    letter-spacing:.5px;
+}
+
+
+
+.faculty-profile-section h2{
+    font-size:38px;
+    font-weight:700;
+    color:#1b2a4e;
+    margin-bottom:8px;
+}
+
+.faculty-profile-section h5{
+    font-size:20px;
+    color:#0d6efd;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.faculty-profile-section p{
+    color:#555;
+    line-height:1.9;
+    font-size:16px;
+    text-align:justify;
+}
+
+
+
+.faculty-profile-section .row.mt-4{
+    margin-top:35px!important;
+}
+
+.faculty-profile-section .row.mt-4 .col-md-6{
+
+    background:#f8fbff;
+
+    border-left:5px solid #071c74; ;
+
+    padding:16px 20px;
+
+    border-radius:12px;
+
+    transition:.35s;
+
+    margin-bottom:15px;
+
+}
+
+.faculty-profile-section .row.mt-4 .col-md-6:hover{
+
+    background:#071c74; ;
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(13,110,253,.25);
+
+}
+
+.faculty-profile-section .row.mt-4 strong{
+
+    color:#1b2a4e;
+
+}
+
+.faculty-profile-section .row.mt-4 .col-md-6:hover strong{
+
+    color:#fff;
+
+}
+
+
+
+@media (max-width:991px){
+
+.faculty-profile-section{
+
+padding:70px 0;
+
+}
+
+.faculty-profile-section .row{
+
+padding:30px;
+
+text-align:center;
+
+}
+
+.faculty-profile-section img{
+
+max-width:260px;
+
+margin-bottom:30px;
+
+}
+
+.faculty-profile-section h2{
+
+font-size:32px;
+
+}
+
+.faculty-profile-section h5{
+
+font-size:18px;
+
+}
+
+.faculty-profile-section p{
+
+text-align:left;
+
+}
+
+}
+
+@media (max-width:767px){
+
+.faculty-profile-section{
+
+padding:60px 0;
+
+}
+
+.faculty-profile-section .row{
+
+padding:25px;
+
+}
+
+.faculty-profile-section h2{
+
+font-size:28px;
+
+}
+
+.faculty-profile-section h5{
+
+font-size:17px;
+
+}
+
+.faculty-profile-section p{
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+.faculty-profile-section .row.mt-4 .col-md-6{
+
+margin-bottom:12px;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.faculty-profile-section img{
+
+max-width:220px;
+
+}
+
+.faculty-profile-section h2{
+
+font-size:24px;
+
+}
+
+.faculty-profile-section h5{
+
+font-size:16px;
+
+}
+
+.faculty-profile-section .badge{
+
+font-size:12px;
+
+padding:8px 15px;
+
+}
+
+}
+</style>
+</head>
+
+
+<body class="index-page">
+     <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo1.png" alt="">
+        <!-- <h1 class="sitename">Estate<span>Agency</span></h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+           <li class="dropdown"><a href="about.html" class="active"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="chairman.html">Chairman & Founder</a></li>
+              <li><a href="vicechairperson.html">Vice Chairperson</a></li>
+              <li><a href="principal.html">Principal</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+
+              
+              <!-- <li class="dropdown"><a href="faculty.html"><span>Faculty</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="courses.html">Courses</a></li>
+
+
+         
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+<section class="faculty-profile-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-4 text-center">
+
+                <img src="assets/img/faculty/f4.png"
+                     class="img-fluid rounded-4 shadow"
+                     alt="Sai Amulya P">
+
+            </div>
+
+            <div class="col-lg-8" style="margin-top: 40px;">
+
+                <span class="badge bg-primary mb-3">Assistant Professor</span>
+
+                <h2>Sai Amulya P</h2>
+
+                <h5 class="text-primary mb-4">Department of Business Management</h5>
+
+                <p style="text-align:justify; line-height:1.9;">
+
+                    Ms. <strong>Sai Amulya P</strong> is an Assistant Professor in the
+                    Department of Business Management with over
+                    <strong>2 years of teaching experience</strong>. She holds a
+                    <strong>Master of Business Administration (MBA)</strong> and is
+                    <strong>NET &amp; SET Qualified</strong>. Her areas of specialization
+                    include <strong>Finance and Human Resource Management</strong>.
+                    She is passionate about creating an engaging learning environment
+                    by combining theoretical concepts with practical business applications.
+                    She actively mentors students, encourages participation in seminars,
+                    workshops, case study presentations, and management events while
+                    promoting professional ethics, leadership qualities, and career
+                    readiness among future management professionals.
+
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-md-6 mb-3">
+                        <strong>Qualification :</strong> MBA, NET &amp; SET Qualified
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <strong>Specialization :</strong> Finance &amp; Human Resource Management
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <strong>Experience :</strong> 2+ Years
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <strong>Department :</strong> Business Management
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="footer" class="footer light-background">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Address -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div class="address">
+          <h4>Omega School of Business</h4>
+          <p>Habsiguda</p>
+          <p>Hyderabad, Telangana</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>Contact</h4>
+          <p>
+            <strong>Phone:</strong>
+            <span><a href="tel:9912988867">9912988867</a></span><br>
+
+            <strong>Email:</strong>
+            <span>
+              <a href="mailto:obs.principal@omegacolleges.com">
+                obs.principal@omegacolleges.com
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Programs -->
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-mortarboard icon"></i>
+        <div>
+          <h4>Programs Offered</h4>
+          <a href="bba.html"><p>BBA</p></a>
+          <a href="bca.html"><p>BCA</p></a>
+         <a href="bcom.html"><p>B.Com (Computer Applications)</p></a> 
+          <a href="aiml.html"><p>B.Sc AI & ML</p></a>
+          <p><strong>Affiliated to Osmania University</strong></p>
+        </div>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-lg-3 col-md-6">
+        <h4>Follow Us</h4>
+
+        <p class="mb-3">
+          Admissions Open 2026-27<br>
+          Build your future with quality education.
+        </p>
+
+        <div class="social-links d-flex">
+
+          <a href="https://www.facebook.com/share/1JwzQ4fKQy/" class="facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="https://www.instagram.com/omegaschoolofbusiness?utm_source=qr&igsh=dW1jaGJzbGxvMjJo" class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://youtube.com/@omegaschoolofbusiness?si=VasuLgBYLKdrgt0E" class="youtube">
+            <i class="bi bi-youtube"></i>
+          </a>
+
+          <a href="#" class="linkedin">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+        </div>
+
+        <a href="tel:9912988867" class="btn btn-primary mt-3 px-4 rounded-pill" style="background-color: #102a72;">
+          Apply Now
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-5">
+    <p>
+      © <strong class="px-1 sitename">Omega School of Business</strong>
+      All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
